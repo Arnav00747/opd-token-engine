@@ -1,6 +1,13 @@
-This is an OPD Token Allocation Engine.
+Features:
+- Fixed time-slot based OPD scheduling
+- Priority handling for Emergency patients
+- Slot capacity enforcement
+- Simple OPD day simulation using console logs
 
-I created slots for doctors and assigned tokens to patients.
-Emergency patients are handled with higher priority.
+Approach:
+The system assigns tokens to patients based on priority.
+If an emergency patient arrives, they are placed at the top
+of the queue while respecting slot capacity constraints.
 
-This project simulates one OPD day.
+Limitations:
+This is an in-memory simulation and does not persist data.
